@@ -1,4 +1,4 @@
-package com.github.doquanghop.shared.utils;
+package io.github.doquanghop.shared.utils;
 
 import org.slf4j.Logger;
 

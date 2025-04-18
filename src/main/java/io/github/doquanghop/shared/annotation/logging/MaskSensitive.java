@@ -1,4 +1,4 @@
-package com.github.doquanghop.shared.annotation.logging;
+package io.github.doquanghop.shared.annotation.logging;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

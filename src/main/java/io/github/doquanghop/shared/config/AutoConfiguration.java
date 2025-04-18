@@ -1,6 +1,7 @@
-package com.github.doquanghop.shared.config;
+package io.github.doquanghop.shared.config;
 
-import com.github.doquanghop.shared.aop.ActionLogAspect;
+import io.github.doquanghop.shared.aop.ActionLogAspect;
+import io.github.doquanghop.shared.helper.SensitiveDataMasker;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +13,13 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class AutoConfiguration {
     @Bean
     @ConditionalOnMissingBean
-    public ActionLogAspect actionLogAspect() {
-        return new ActionLogAspect();
+    public SensitiveDataMasker sensitiveDataMasker() {
+        return new SensitiveDataMasker();
+    }
+
+    @Bean
+    @ConditionalOnMissingBean
+    public ActionLogAspect actionLogAspect(SensitiveDataMasker sensitiveDataMasker) {
+        return new ActionLogAspect(sensitiveDataMasker);
     }
 }

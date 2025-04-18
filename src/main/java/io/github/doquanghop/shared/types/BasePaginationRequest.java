@@ -1,4 +1,4 @@
-package com.github.doquanghop.shared.types;
+package io.github.doquanghop.shared.types;
 
 import lombok.Getter;
 import lombok.Setter;

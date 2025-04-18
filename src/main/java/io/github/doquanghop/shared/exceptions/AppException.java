@@ -1,4 +1,4 @@
-package com.github.doquanghop.shared.exceptions;
+package io.github.doquanghop.shared.exceptions;
 
 import lombok.Getter;
 

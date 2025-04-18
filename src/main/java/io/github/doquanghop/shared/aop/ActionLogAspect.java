@@ -1,10 +1,10 @@
-package com.github.doquanghop.shared.aop;
+package io.github.doquanghop.shared.aop;
 
-import com.github.doquanghop.shared.exceptions.AppException;
-import com.github.doquanghop.shared.helper.SensitiveDataMasker;
-import com.github.doquanghop.shared.annotation.logging.ActionLog;
-import com.github.doquanghop.shared.annotation.logging.MaskSensitive;
-import com.github.doquanghop.shared.utils.LogUtils;
+import io.github.doquanghop.shared.exceptions.AppException;
+import io.github.doquanghop.shared.helper.SensitiveDataMasker;
+import io.github.doquanghop.shared.annotation.logging.ActionLog;
+import io.github.doquanghop.shared.annotation.logging.MaskSensitive;
+import io.github.doquanghop.shared.utils.LogUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -25,7 +25,7 @@ public class ActionLogAspect {
 
     private static final boolean IS_LOGGING_ENABLED = true;
     private static final String DEFAULT_LOG_LEVEL = "INFO";
-    private static final String LOG_PREFIX = "[Chat App] ";
+    private static final String LOG_PREFIX = "[Logging] ";
     private static final String DEFAULT_MASK_VALUE = "****";
 
     private final SensitiveDataMasker sensitiveDataMasker;
@@ -37,7 +37,7 @@ public class ActionLogAspect {
     /**
      * Logs method execution details (start, completion, or failure) for methods annotated with @ActionLog.
      */
-    @Around("@annotation(com.github.doquanghop.shared.annotation.logging.ActionLog)")
+    @Around("@annotation(io.github.doquanghop.shared.annotation.logging.ActionLog)")
     public Object logAction(ProceedingJoinPoint joinPoint) throws Throwable {
         if (!IS_LOGGING_ENABLED) {
             return joinPoint.proceed();
