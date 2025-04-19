@@ -1,4 +1,4 @@
-package io.github.doquanghop.shared.utils;
+package io.github.doquanghop.codevibe.utils;
 
 import org.slf4j.Logger;
 

@@ -1,9 +1,9 @@
-package io.github.doquanghop.shared.advice;
+package io.github.doquanghop.codevibe.advice;
 
 
-import io.github.doquanghop.shared.exceptions.AppException;
-import io.github.doquanghop.shared.exceptions.ExceptionCode;
-import io.github.doquanghop.shared.types.ApiResponse;
+import io.github.doquanghop.codevibe.exceptions.AppException;
+import io.github.doquanghop.codevibe.exceptions.ExceptionCode;
+import io.github.doquanghop.codevibe.types.ApiResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
-package io.github.doquanghop.shared.helper;
+package io.github.doquanghop.codevibe.helper;
 
-import io.github.doquanghop.shared.annotation.logging.MaskSensitive;
+import io.github.doquanghop.codevibe.annotation.logging.MaskSensitive;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

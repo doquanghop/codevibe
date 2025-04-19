@@ -1,4 +1,4 @@
-package io.github.doquanghop.shared.exceptions;
+package io.github.doquanghop.codevibe.exceptions;
 
 import lombok.Getter;
 

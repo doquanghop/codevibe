@@ -1,7 +1,7 @@
-package io.github.doquanghop.shared.config;
+package io.github.doquanghop.codevibe.config;
 
-import io.github.doquanghop.shared.aop.ActionLogAspect;
-import io.github.doquanghop.shared.helper.SensitiveDataMasker;
+import io.github.doquanghop.codevibe.aop.ActionLogAspect;
+import io.github.doquanghop.codevibe.helper.SensitiveDataMasker;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;

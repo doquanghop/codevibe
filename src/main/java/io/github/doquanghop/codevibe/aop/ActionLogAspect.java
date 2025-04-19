@@ -1,10 +1,10 @@
-package io.github.doquanghop.shared.aop;
+package io.github.doquanghop.codevibe.aop;
 
-import io.github.doquanghop.shared.exceptions.AppException;
-import io.github.doquanghop.shared.helper.SensitiveDataMasker;
-import io.github.doquanghop.shared.annotation.logging.ActionLog;
-import io.github.doquanghop.shared.annotation.logging.MaskSensitive;
-import io.github.doquanghop.shared.utils.LogUtils;
+import io.github.doquanghop.codevibe.exceptions.AppException;
+import io.github.doquanghop.codevibe.helper.SensitiveDataMasker;
+import io.github.doquanghop.codevibe.annotation.logging.ActionLog;
+import io.github.doquanghop.codevibe.annotation.logging.MaskSensitive;
+import io.github.doquanghop.codevibe.utils.LogUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -37,7 +37,7 @@ public class ActionLogAspect {
     /**
      * Logs method execution details (start, completion, or failure) for methods annotated with @ActionLog.
      */
-    @Around("@annotation(io.github.doquanghop.shared.annotation.logging.ActionLog)")
+    @Around("@annotation(io.github.doquanghop.codevibe.annotation.logging.ActionLog)")
     public Object logAction(ProceedingJoinPoint joinPoint) throws Throwable {
         if (!IS_LOGGING_ENABLED) {
             return joinPoint.proceed();

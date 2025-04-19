@@ -1,4 +1,4 @@
-package io.github.doquanghop.shared.annotation.logging;
+package io.github.doquanghop.codevibe.annotation.logging;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package io.github.doquanghop.shared.types;
+package io.github.doquanghop.codevibe.types;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
